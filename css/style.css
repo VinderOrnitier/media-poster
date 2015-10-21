@@ -1,0 +1,66 @@
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(top, #A2A19D 0%, #F1F0EC 40%);
+  background: linear-gradient(to bottom, #A2A19D 0%, #F1F0EC 40%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(800px);
+          transform: perspective(800px);
+}
+
+.poster {
+  width: 320px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -160px;
+  border-radius: 5px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.poster .shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 60%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: 100;
+}
+.poster div[class*="layer-"] {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-transition: 0.1s;
+          transition: 0.1s;
+}
+.poster .layer-1 {
+  background-image: url("../images/3.png");
+}
+.poster .layer-2 {
+  background-image: url("../images/1.png");
+}
+.poster .layer-3 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/2.png");
+}
+.poster .layer-4 {
+  background-image: url("../images/4.png");
+}
+.poster .layer-5 {
+  background-image: url("../images/5.png");
+}
